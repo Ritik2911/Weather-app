@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <h1>Weather App</h1>
+
+        <div class="container">
+
+            <div class="loading" loading>
+                <img src="./images/loading.gif" alt="" loading>
+                <p>Loading</p>
+            </div>
+
+            <div class="toggle-switch">
+                <button class="btn " onclick="yourWeatherMode()" youWeather>Your Weather</button>
+                <button class="btn" onclick="searchWeatherMode()" searchWeatherMode>Search Weather</button>
+            </div>
+
+            <div class="search-weather" searchWeatherField>
+                <input type="text" placeholder="Search for City..." searchInput>
+                <button onclick="searchWeather()">
+                    <img src="./images/search.png" alt="">
+                </button>
+            </div>
+
+            <div class="no-location-data" noLocationData>
+                <img src="./images/not-found.png" alt="" width="250px">
+                <p>Location Not Found</p>
+            </div>
+
+            <div class="no-location" locationCoordsNotFound>
+                <img src="./images/location.png" alt="" width="80px">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+                <button grantAccess>
+                    GRANT ACCESS
+                </button>
+            </div>
+
+            <div class="weather-details" weatherDetails>
+                
+                <p class="city-details">
+                    <span class="city-name" cityNameSpan>Patna</span>
+                    <img src="" alt="flag" countryFlagSpan width="40px">
+                </p>
+
+                <div class="weather-condition">
+                    <p weatherDescription>Haze</p>
+                    <img src="" alt="" weatherIcon>
+                </div>
+
+                <p class="temperature-display" temperatureDisplay>
+                    88.78 C
+                </p>
+
+                <div class="extra-details">
+                    <div class="wind box">
+                        <img src="./images/wind.png" alt="">
+                        <p class="feature">WIND SPEED</p>
+                        <p class="wind-speed measurement windSpeed" windSpeed>5.3 m/s</p>
+                    </div>
+                    <div class="humidity box">
+                        <img src="./images/humidity.png" alt="">
+                        <p class="feature">HUMIDITY</p>
+                        <p class="humidity-percentage measurement" humidityPercentage>76%</p>
+                    </div>
+                    <div class="clouds box">
+                        <img src="./images/cloud.png" alt="">
+                        <p class="feature">CLOUDS</p>
+                        <p class="cloud-percentage measurement " cloudPercentage>76%</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
