@@ -86,10 +86,9 @@ function searchWeatherMode() {
 }
 
 function updateUI() {
-  
   country = weatherData.sys.country;
   country = weatherData.sys.country;
-  weatherDescription.innerHTML =weatherData?.weather[0]?.description;
+  weatherDescription.innerHTML = weatherData?.weather[0]?.description;
 
   temperatureDisplay.innerHTML = weatherData?.main?.temp + " C";
 
