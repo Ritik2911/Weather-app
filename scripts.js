@@ -90,7 +90,7 @@ function updateUI() {
   country = weatherData.sys.country;
   weatherDescription.innerHTML = weatherData?.weather[0]?.description;
 
-  temperatureDisplay.innerHTML = weatherData?.main?.temp + " C";
+  temperatureDisplay.innerHTML = weatherData?.main?.temp + " °C";
 
   windSpeed.innerHTML = weatherData?.wind?.speed + " m/s";
 
