@@ -188,4 +188,7 @@ function showPosition(position) {
 
 grantAccess.addEventListener("click", getLocation);
 
-// searchWeatherField.addEventListener("submit",searchWeather);
+searchWeatherField.addEventListener("submit",(e) => {
+  e.preventDefault();
+  searchWeather();
+})
